@@ -1,0 +1,37 @@
+Recomendaciones:
+
+
+. Completa el atributo alt de las imagenes presentes en portfolio.html. 
+
+
+. Hay dos etiquetas de cierre de </footer> en tu index. (LISTO)
+
+
+. Para no engañar al usuario, estaría bueno que todos los botontes que estén presentes en tu web, al ser clickeados, siempre generen algún tipo de acción. Pueden redirigir a otra sección de tu web, abrir otra web en una nueva pestaña o abrir un modal/pop-up. Esto te lo digo por el botón que tenes en tu index.html o los botones de ver perfil en nosotros.html que al hacer click no llevan a ningún lado. (LISTO)
+
+
+. En el Copyright de tu <footer> tenes una declaración de estilos hecha sobre la etiqueta. Recorda que esto no cumple con las buenas prácticas, lo correcto sería que estos estilos se apliquen desde tu CSS. Y también tiene una etiqueta <a> la cual no tiene completo su atributo href. (LISTO)
+
+
+. !!! En tu código hay un uso excesivo del <div>. Fijate de utilizar otro tipo de etiquetas que tengan un uso semantico más apropiado para el contexto. (LISTO)
+
+
+. Recorda eliminar las etiquetas <br> para generar espacios. Lo correcto sería separar cada parrafo de un texto en sus respectivas etiquetas <p> y generar espacios utilizando los atributos de CSS. (LISTO)
+
+
+. Las tajetas de la sección servicios.html tienen asignado en CSS un cursor: pointer; lo cual hace que parecezca que las mismas son clickeables. Esto consideraría que es un error, ya que si fueran clickeables deberían de generar alguna acción al ser clickeadas, y así no engañar al usuario. ](LISTO)
+
+
+. Lo mejor sería que los placeholders del form estén en español como el resto de la web.  (LISTO)
+
+
+. Como vimos en clase la etiqueta <h1> representa el título principal de cada sección, y también vimos que tiene cierta importancia en cuanto a SEO, es importante que esté presente una vez por cada archivo html de tu web. El mismo no está presente en 3 de tus archivos html. (LISTO)
+
+
+. Recorda que los inputs deben tener también el atributo name. El mismo es importante, ya que si no está presente la información del input, dependiendo en como se esté trabajando, podría no enviarse. 
+
+
+. En tu archivo variables.scss hay bastante código que en realidad no corresponde a las variables de SCSS, si no que son declaraciones para algunos de tus componentes. Lo mejor sería crear su respectivo partial para este código.
+
+
+. Para optimizar tu código SCSS, en el archivo porforlio.scss podrías utilizar la anidación para los selectores de las lineas 6, 12 y 18, ya que como ves todos parten desde #portfolio. (listo)

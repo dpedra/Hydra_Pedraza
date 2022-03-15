@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+$colores:(ColorPrimario: #04BF68,
+    colorSecundario:#232426,
+    colorTexto:white,
+    colorTexto2:#7d7e80,
+    colorFondo:#110f16,
+);
+
+
+
+%neon {
+    border-radius: 2%;
+    box-shadow: 0 0 3px, 0 0 10px #22e77b, 0 0 20px #22e77b;
+    transition-delay: 0.2s;
+    color: map-get($colores, colorParrafo);
+}
+
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: map-get($colores, colorFondo);
+
+}
+
+.container_Social {
+    background-color: #04BF68;
+}
+
+
+
+.navbar-buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.general {
+    margin: 5px auto;
+}
+
+/* Sing In Button */
+.button {
+    background-color: rgba(44, 45, 47, 0.749);
+    width: 97px;
+    height: 30px;
+    font-size: 12px;
+    color: map-get($colores, colorTexto);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(51, 55, 69, 0.80);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    z-index: 10;
+}
+
+.overlay .nav-title {
+    font-size: 22px;
+    color: map-get($colores, colorTexto);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 8%;
+    z-index: 10;
+}
+
+.overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    z-index: 10;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    z-index: 10;
+
+
+}
+
+.overlay ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-bottom: 50px;
+    z-index: 10;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: map-get($colores, colorTexto);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: map-get($colores, colorTexto);
+    transition: .35s;
+    z-index: 10;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus,
+.overlay ul li a:active {
+    color: map-get($colores, ColorPrimario);
+}
+
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 100%;
+    background: map-get($colores, ColorPrimario);
+}
+
+
+.overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+button:focus {
+    outline: 0;
+}
+
+.open-menu,
+.close-menu,
+.button {
+    cursor: pointer;
+    transition: transform 0.30s;
+}
+
+.open-menu:hover,
+.close-menu:hover,
+.button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+
+}
+
+.cont_Titulos{
+    width: 100%;
+    background-color: #04BF68;
+    padding:5px;
+    margin-bottom: 50px;
+}
+
+.Titulos{
+    color:white;
+}

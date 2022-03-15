@@ -1,0 +1,100 @@
+@media screen and (max-width: 1280px) {
+    .overlay nav {
+        font-size: 30px;
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .overlay nav {
+        font-size: 20px;
+    }
+
+    .contenedor_Servicios {
+        max-width: 400px;
+    }
+
+    .espaciado {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .contenedor_Contacto {
+        max-width: 400px;
+    }
+
+    .imagen_Contacto {
+        margin-left: -40px;
+
+    }
+
+    .card_testimonios {
+        max-width: 400px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    ul.testimonial-list {
+        max-width: 400px;
+
+    }
+
+    .card_testimonios {
+        width: 330px;
+        color: black;
+        background-color: white;
+        margin-left: -25px !important;
+        box-shadow: 0 0 40px rgba(29, 252, 59, 0.1);
+        padding: 30px;
+
+    }
+
+    .card_testimonios_Descripcion {
+        max-width: 400px;
+        margin-bottom: 50px;
+        margin: 0 auto;
+
+    }
+
+    .resenias_Footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .card_testimonios_Descripcion {
+        margin-bottom: 250px;
+    }
+
+    .img_Normal {
+        width: 100%;
+        background-color:red;
+    }
+
+    .modal-body{
+    
+        width:350px;
+        margin-left:-80px;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 320px!important;
+        margin-left:-15px;
+        width: 3rem;
+        height: 3rem;
+        background-color: transparent;
+        z-index: 15;
+        
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}

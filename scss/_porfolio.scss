@@ -1,0 +1,92 @@
+.contenedor_Portfolio{
+    margin: 2% auto;
+
+
+
+.portfolio-item {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 191, 104, 0.5);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 5rem auto;
+    max-width: 50vw;
+
+    .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    
+}
+
+.modal-content h2,
+.modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.modal-content p {
+    margin-bottom: 2rem;
+}
+
+ul.list-inline {
+    margin-bottom: 2rem;
+}
+
+img {
+    margin-bottom: 2rem;
+}
+
+.close-modal {
+    position: absolute;
+    bottom: 22%;
+    left: 48%;
+    right: 48%;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    z-index: 15;
+    
+}
+
+
+
+}

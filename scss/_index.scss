@@ -1,0 +1,64 @@
+.cBlanco {
+    color: white;
+}
+
+.contenedor_Texto {
+    text-align: justify;
+    margin: 5% auto;
+}
+
+.contenedor_Texto p {
+    text-align: justify;
+    padding: 1rem;
+
+}
+
+.btn-animado {
+    border: 1px solid map-get($colores, ColorPrimario);
+    background-color: map-get($colores, ColorPrimario);
+    color: map-get($colores, colorTexto);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-animado:hover {
+    @extend %neon;
+    color: map-get($colores, colorTexto);
+}
+
+.texto_Decorativo {
+    color: map-get($colores, ColorPrimario);
+}
+
+.texto_Decorativo2 {
+    color: map-get($colores, colorTexto);
+}
+
+.texto_Decorativo3 {
+    color: map-get($colores, ColorPrimario);
+    font-size: 100px;
+}
+
+.btn-social {
+    color: white;
+    font-size: 24px;
+
+}
+
+
+.img_Animada {
+    animation: movimiento 3.5s linear infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+.Testimonios_Nombre{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.card_testimonios {
+    width: 330px;
+    color:black;
+    background-color:white;
+    margin: 0 auto;
+    box-shadow: 0 0 40px rgba(29, 252, 59, 0.1);
+    padding: 30px;
+    
+}
+
+.card_testimonios_Descripcion{
+    border: none;
+    color:black;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(29, 252, 59, 0.1);
+    padding: 25px;
+    margin-top: -72px;
+}
+
+.card_testimonios_Descripcion h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.card_testimonios:hover {
+    background-color: #eee;
+}
+
+.ratings i {
+    color:#04BF68;
+}
+
+
+
+.testimonial-list {
+    list-style: none;
+    width: 600px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.testimonial-list li {
+    margin-bottom: 20px;
+    
+}
+
+.testimonials-margin {
+    margin-top: 100px;
+}
+
+.Testimonios_Nombre{
+    margin-left: 20px;
+}
+
+.Testimonios_Descripcion{
+    margin-left: 20px;
+}
